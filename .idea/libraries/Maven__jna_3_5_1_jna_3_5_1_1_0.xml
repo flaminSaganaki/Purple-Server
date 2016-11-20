@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jna-3.5.1:jna-3.5.1:1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jna-3/5/1/jna-3.5.1/1.0/jna-3.5.1-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jna-3/5/1/jna-3.5.1/1.0/jna-3.5.1-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jna-3/5/1/jna-3.5.1/1.0/jna-3.5.1-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

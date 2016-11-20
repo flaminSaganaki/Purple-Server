@@ -1,0 +1,37 @@
+scp -r -i /key/tomcatKey.pem "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/App.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/clip.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/DBaseVL.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/DBaseVL.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/DBUser.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/RequestPrinter.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/test.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/VidLib.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/vlproject.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/vluser.class" "/Users/louislapat/Desktop/vidlib/VLSERVLET/target/classes/vluser\$GenericExtFilter.class" ec2-user@ec2-107-21-149-104.compute-1.amazonaws.com:/var/lib/tomcat6/webapps/vidlib/WEB-INF/classes/
+
+
+
+FOR JARS:
+
+scp -r -i /key/tomcatKey.pem "/Users/louislapat/Desktop/vidlib/VLSERVLET/someJars/commons-logging-1.1.1.jar" ec2-user@ec2-107-21-149-104.compute-1.amazonaws.com:/var/lib/tomcat6/webapps/vidlib/WEB-INF/classes/
+
+
+Exception in writeStringToFile java.io.FileNotFoundException: /var/lib/tomcat6/webapps/vidlib/algo/vljava/media.xml (Permission denied)
+
+
+scp -i /key/tomcatKey.pem ec2-user@ec2-107-21-149-104.compute-1.amazonaws.com:/var/lib/tomcat6/webapps/vidlib/algo/vljava/original.jpeg ec2-user@ec2-23-20-245-105.compute-1.amazonaws.com:/var/www/html/example/transcode/media/user/testCopy/
+		
+
+String scpStr="sudo scp -i /key/tomcatKey.pem /var/lib/tomcat6/webapps/vidlib/algo/vljava/original.jpeg ec2-user@ec2-23-20-245-105.compute-1.amazonaws.com:/var/www/html/example/transcode/media/user/testCopy/";
+	    
+		System.out.println("*** qSCP UPLOAD COMMAND= "+scpStr);
+		try {
+			System.out.println("Copying...");
+			Process p = Runtime.getRuntime().exec(scpStr);
+			int status = p.waitFor();
+			System.out.println("Copying finished with this status code= "+status);
+			
+			
+			
+			BufferedReader err=new BufferedReader(new InputStreamReader(p.getErrorStream()));
+			String line;
+			try {
+				while ((line = err.readLine()) != null) {
+					System.out.println("err="+line);
+				}
+			} catch (Exception e) {throw new Error(e);}
+			
+		} catch (Exception e) {
+			System.out.println("uploadFile "+e);
+		}

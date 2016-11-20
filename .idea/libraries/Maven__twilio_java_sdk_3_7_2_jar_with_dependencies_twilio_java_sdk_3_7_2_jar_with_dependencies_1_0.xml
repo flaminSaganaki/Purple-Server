@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: twilio-java-sdk-3.7.2-jar-with-dependencies:twilio-java-sdk-3.7.2-jar-with-dependencies:1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/twilio-java-sdk-3/7/2-jar-with-dependencies/twilio-java-sdk-3.7.2-jar-with-dependencies/1.0/twilio-java-sdk-3.7.2-jar-with-dependencies-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/twilio-java-sdk-3/7/2-jar-with-dependencies/twilio-java-sdk-3.7.2-jar-with-dependencies/1.0/twilio-java-sdk-3.7.2-jar-with-dependencies-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/twilio-java-sdk-3/7/2-jar-with-dependencies/twilio-java-sdk-3.7.2-jar-with-dependencies/1.0/twilio-java-sdk-3.7.2-jar-with-dependencies-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

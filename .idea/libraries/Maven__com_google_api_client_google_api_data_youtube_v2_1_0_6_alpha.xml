@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.api.client:google-api-data-youtube-v2:1.0.6-alpha">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/client/google-api-data-youtube-v2/1.0.6-alpha/google-api-data-youtube-v2-1.0.6-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/client/google-api-data-youtube-v2/1.0.6-alpha/google-api-data-youtube-v2-1.0.6-alpha-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/client/google-api-data-youtube-v2/1.0.6-alpha/google-api-data-youtube-v2-1.0.6-alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
