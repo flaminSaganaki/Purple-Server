@@ -6,56 +6,56 @@ public class Log2File  {
 	
 	public static void log(String logText){
         try{
-			LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/versa/log/newLog.txt")));
+			LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/purple/log/newLog.txt")));
 			lnr.skip(Long.MAX_VALUE);
 			if(lnr.getLineNumber()>5000){
-				PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/versa/log/newLog.txt"));
+				PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/purple/log/newLog.txt"));
 				writer.print("");
 				writer.close();
 			}
         }catch(Exception e){
-            writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/newLog.txt", new String[] {"Exception writing Log2File.log"}, true);
+            writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/newLog.txt", new String[] {"Exception writing Log2File.log"}, true);
         }
-		writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/newLog.txt", new String[] {logText}, true);
+		writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/newLog.txt", new String[] {logText}, true);
 	}
     
     public static void logEncodingError(String logText){
         try{
-            LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/versa/log/encodingErrorLog.txt")));
+            LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/purple/log/encodingErrorLog.txt")));
             lnr.skip(Long.MAX_VALUE);
             if(lnr.getLineNumber()>5000){
-                PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/versa/log/encodingErrorLog.txt"));
+                PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/purple/log/encodingErrorLog.txt"));
                 writer.print("");
                 writer.close();
             }
         }catch(Exception e){
-            writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/newLog.txt", new String[] {"Exception writing ENCODING LOG"}, true);
+            writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/newLog.txt", new String[] {"Exception writing ENCODING LOG"}, true);
         }
-        writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/encodingErrorLog.txt", new String[] {logText}, true);
+        writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/encodingErrorLog.txt", new String[] {logText}, true);
     }
 	
 	public static void logVTQ(String logText){
         try{
-			LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/versa/log/vtq.txt")));
+			LineNumberReader  lnr = new LineNumberReader(new FileReader(new File("/var/lib/tomcat8/webapps/purple/log/vtq.txt")));
 			lnr.skip(Long.MAX_VALUE);
 			if(lnr.getLineNumber()>5000){
-				PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/versa/log/vtq.txt"));
+				PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/purple/log/vtq.txt"));
 				writer.print("");
 				writer.close();
 			}
         }catch(Exception e){
-            writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/vtq.txt", new String[] {"Exception writing Log2File.logVTQ"}, true);
+            writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/vtq.txt", new String[] {"Exception writing Log2File.logVTQ"}, true);
         }
-		writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/vtq.txt", new String[] {logText}, true);
+		writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/vtq.txt", new String[] {logText}, true);
 	}
 	
 	public static void clearLog() {
 		try{
-			PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/versa/log/newLog.txt"));
+			PrintWriter writer = new PrintWriter(new File("/var/lib/tomcat8/webapps/purple/log/newLog.txt"));
 			writer.print("");
 			writer.close();
         }catch(Exception e){
-            writeLinesToFile("/var/lib/tomcat8/webapps/versa/log/newLog.txt", new String[] {"Exception writing Log2File.log"}, true);
+            writeLinesToFile("/var/lib/tomcat8/webapps/purple/log/newLog.txt", new String[] {"Exception writing Log2File.log"}, true);
         }
 	}
 	
